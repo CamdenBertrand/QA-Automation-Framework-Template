@@ -54,7 +54,7 @@ public class LoginSteps {
         }
 
         @And("I submit")
-        public void clickSubmit(String email){
+        public void clickSubmit(){
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[type='submit']"))).click();
         }
 

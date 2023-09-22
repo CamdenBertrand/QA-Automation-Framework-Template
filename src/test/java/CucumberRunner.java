@@ -22,8 +22,6 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
         return testNGCucumberRunner.provideScenarios();
     }
     @AfterClass(alwaysRun = true)
-    public void tearDownClass(){
-        testNGCucumberRunner.finish();
-    }
+    public void tearDownClass(){ testNGCucumberRunner.finish(); }
 
 }
